@@ -1,7 +1,7 @@
 
 <?php
   try
-   { $pdo = new PDO('mysql:host=localhost;dbname=cigla;encoding=utf-8', 'root', '12345'); }
+   { $pdo = new PDO('mysql:host=localhost;dbname=dbname;encoding=utf-8', 'user', 'pas'); }
    catch(PDOException $e)
    { echo 'Połączenie nie mogło zostać utworzone: ' . $e->getMessage(); }
 	 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
